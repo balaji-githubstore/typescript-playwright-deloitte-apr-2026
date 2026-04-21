@@ -61,3 +61,14 @@ runner()
 
 
 
+
+
+//Named parameters 
+function addMe234(option: {
+    name?: string,
+    value?: string,
+    index: number
+}) {
+    console.log(option.index)
+}
+

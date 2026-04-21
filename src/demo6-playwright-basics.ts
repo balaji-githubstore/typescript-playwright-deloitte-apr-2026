@@ -3,29 +3,27 @@ import { chromium } from "playwright"
 
 async function basicOperation() {
     //Browser instance
-    const browser= await chromium.launch({headless:false,channel:"chrome"});
+    const browser = await chromium.launch({ headless: false, channel: "chrome" });
 
     //browsercontext 
-    const context= await browser.newContext();
+    const context = await browser.newContext();
 
     //new tab
-    const page=await context.newPage();
+    const page = await context.newPage();
 
     await page.goto("https://x.com/")
 
     await page.locator("xpath=//span[text()='Create account']").click()
 
     await page.locator("xpath=//input[@name='name']").fill("jack")
-  
-    //enter phone number as 909090900
-    // await page.locator("xpath=//input[@name='phone_number']").fill("8095554424")
 
+    //enter phone number as 909090900
+    await page.locator("xpath=//input[@name='phone_number']").fill("8095554424")
 
     //dec 2000 20
-    await page.locator("xpath=//select[@id='SELECTOR_1']").scrollIntoViewIfNeeded()
-    await page.locator("xpath=//select[@id='SELECTOR_1']").selectOption({label:"December"})
-
-
+    await page.locator("xpath=//select[@id='SELECTOR_1']").selectOption({ label: "December" })
+    await page.locator("xpath=//select[@id='SELECTOR_2']").selectOption({ label: "20" })
+    await page.locator("xpath=//select[@id='SELECTOR_3']").selectOption({ label: "2000" })
     await page.waitForTimeout(5000)
     browser.close()
 
