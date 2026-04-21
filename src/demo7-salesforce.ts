@@ -17,7 +17,12 @@ async function basicOperation() {
     //enter job title
     //click next 
     //select 21-200 employees 
-    
+    //enter company name 
+    //click next 
+    //enter email
+    //select chechbox 
+    //click submit
+    //get the error for phone number and print it
     await page.waitForTimeout(5000)
     browser.close()
 
