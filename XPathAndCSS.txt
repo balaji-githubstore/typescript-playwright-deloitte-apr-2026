@@ -33,3 +33,5 @@ Example: Verify in chrome - ctrl+f
 //input[@name='name']
 //input[contains(@id,'UserFirstName')]
 //span[contains(@id,'UserPhone')]
+
+(//input[@name='UserEmail']/following::div[@class='checkbox-ui'])[1]

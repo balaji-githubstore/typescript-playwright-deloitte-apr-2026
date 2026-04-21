@@ -30,7 +30,7 @@ async function basicOperation() {
     //enter email
     await page.locator("xpath=//input[@name='UserEmail']").fill("CCCS@gmail.com");
     //select chechbox 
-    await page.locator("xpath=(//div[@class='checkbox-ui'])[2]").click();
+    await page.locator("xpath=(//input[@name='UserEmail']/following::div[@class='checkbox-ui'])[1]").click();
     //click submit
     await page.locator("xpath=//button[text()='Submit']").click();
     //get the error for phone number and print it
