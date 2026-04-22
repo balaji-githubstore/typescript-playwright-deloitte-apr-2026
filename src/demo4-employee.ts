@@ -1,3 +1,7 @@
+/**
+ * Employee Datatype
+ * 
+ */
 export class Employee {
     private _id: number;
     private _name: string;
