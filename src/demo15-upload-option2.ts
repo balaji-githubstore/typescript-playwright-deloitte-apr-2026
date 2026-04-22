@@ -16,9 +16,8 @@ await page.goto("https://www.ilovepdf.com/pdf_to_word");
 
 const [filechooser,] = await Promise.all(
     [page.waitForEvent('filechooser'),
-    page.locator("xpath=//span[text()='Select PDF file']").click()
+    page.locator("xpath=//span[text()='Select PDF file']").click(),
     ])
-
 await filechooser.setFiles("c:/AutomationSession/demo.pdf")
 
 await page.waitForTimeout(5000)
