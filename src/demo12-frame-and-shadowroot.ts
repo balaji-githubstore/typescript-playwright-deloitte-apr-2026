@@ -38,6 +38,5 @@ await newPage.locator("css=button[aria-label='Next']").click()
 // await newPage.getByText("Next").click()
 
 
-
 await page.waitForTimeout(5000)
 await browser.close()
