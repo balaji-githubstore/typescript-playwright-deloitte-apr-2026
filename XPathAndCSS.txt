@@ -19,6 +19,9 @@ Contains
 Grouping - starts at 1
 (//span[text()='Month']/following::select)[1]
 
+Xpath for upload
+//input[@type='file']
+
 
 And-Or
 
