@@ -6,10 +6,10 @@ const context = await browser.newContext();
 //tab1
 const page = await context.newPage();
 
-await page.goto("https://x.com/");
+await page.goto("https://mc.login.exacttarget.com/hub-cas/login");
 
-//click on signup with google
 
+//click on Get Free CRM
 
 await page.waitForTimeout(5000)
 await browser.close()
