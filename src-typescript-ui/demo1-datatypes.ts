@@ -12,3 +12,4 @@ let option: {
 
 option = { index: 9, name: "jack" }
 
+console.log(option.index)
