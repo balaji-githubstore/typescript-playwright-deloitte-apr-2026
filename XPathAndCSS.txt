@@ -11,6 +11,11 @@ Contains
 //tagname[contains(@attribute,'')]
 //tagname[contains(text(),'')]
 
+
+//tagname[normalize-space()='']
+//tagname[contains(normalize-space(),'')]
+
+
 Grouping - starts at 1
 (//span[text()='Month']/following::select)[1]
 
@@ -35,3 +40,7 @@ Example: Verify in chrome - ctrl+f
 //span[contains(@id,'UserPhone')]
 
 (//input[@name='UserEmail']/following::div[@class='checkbox-ui'])[1]
+
+//button[normalize-space()='Login']
+
+svg xpath - different 
