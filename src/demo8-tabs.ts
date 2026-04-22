@@ -22,8 +22,8 @@ await page.locator("xpath=//a[contains(@href,'twitter')]").click();
 //tab2
 const newPage=await popup
 
-await newPage.locator("xpath=//span[text()='Create account']").click()
 
+await newPage.locator("xpath=//span[text()='Create account']").click()
 await newPage.close();
 
 
