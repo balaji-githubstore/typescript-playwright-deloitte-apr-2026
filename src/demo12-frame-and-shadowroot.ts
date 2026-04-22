@@ -31,8 +31,13 @@ await newPage.locator("css=input[name='lastName']").fill("jack")
 //click on next
 await newPage.locator("css=button[aria-label='Next']").click()
 
+//css with text not possible so alterate
+// await newPage.locator("button",{hasText:"Next"}).click();
+
 // when no attribute for writing css then use getByText()
 // await newPage.getByText("Next").click()
+
+
 
 await page.waitForTimeout(5000)
 await browser.close()
