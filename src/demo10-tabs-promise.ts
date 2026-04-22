@@ -13,8 +13,6 @@ if (await page.locator("xpath=//button[@id='onetrust-accept-btn-handler']").coun
     await page.locator("xpath=//button[@id='onetrust-accept-btn-handler']").click()
 }
 
-
-
 //hover on //div[text()='My Account']
 await page.locator("xpath=//div[text()='My Account']").hover()
 
