@@ -11,3 +11,4 @@ const response=await apiRequestContext.delete("https://petstore.swagger.io/v2/pe
 
 console.log(response.status())
 
+// npm install -D @types/node
