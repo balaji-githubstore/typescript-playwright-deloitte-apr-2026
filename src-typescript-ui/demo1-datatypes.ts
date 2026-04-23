@@ -13,3 +13,10 @@ let option: {
 option = { index: 9, name: "jack" }
 
 console.log(option.index)
+
+let responseBody:string[]=['red','green','yellow']
+
+for(let pet of responseBody)
+{
+    console.log(pet)
+}

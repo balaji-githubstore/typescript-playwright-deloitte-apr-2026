@@ -16,7 +16,7 @@ await page.on('filechooser',async filechooser=>{
 
 
 console.log(await page.title())
-await page.locator("xpath=//span[text()='Select PDF file']").click()
+//await page.locator("xpath=//span[text()='Select PDF file']").click()
 
 await page.waitForTimeout(5000)
 await browser.close()

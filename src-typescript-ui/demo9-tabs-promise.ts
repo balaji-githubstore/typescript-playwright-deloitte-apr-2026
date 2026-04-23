@@ -1,7 +1,7 @@
-import { chromium } from "playwright"
+import { chromium,firefox } from "playwright"
 
 
-const browser = await chromium.launch({ headless: false, channel: "chrome" });
+const browser = await firefox.launch({ headless: false });
 const context = await browser.newContext();
 //tab1
 const page = await context.newPage();

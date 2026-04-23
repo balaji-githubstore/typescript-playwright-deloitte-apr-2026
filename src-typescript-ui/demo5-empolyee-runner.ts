@@ -23,3 +23,5 @@ console.log(typeof emp4)
 
 let emp5:Employee=Employee.getEmployeeInstance()
 emp5.printEmployeeDetails()
+
+console.log(emp5)

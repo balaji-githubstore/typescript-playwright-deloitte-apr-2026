@@ -1,3 +1,7 @@
+/**
+ * Get method
+ * Example for path parameter
+ */
 import { request } from "playwright";
 
 
