@@ -3,6 +3,7 @@
  * Example for path parameter
  */
 import { request } from "playwright";
+import assert from "node:assert";
 
 const apiRequestContext= await request.newContext(); 
 
@@ -11,4 +12,5 @@ const response=await apiRequestContext.delete("https://petstore.swagger.io/v2/pe
 
 console.log(response.status())
 
-// npm install -D @types/node
+assert.strictEqual(response.status(),200)
+

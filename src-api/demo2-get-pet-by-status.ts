@@ -4,7 +4,7 @@
  */
 
 import { request } from "playwright";
-
+import assert from "node:assert";
 
 const apiRequestContext= await request.newContext(); 
 
@@ -30,4 +30,5 @@ for(let i=0;i<responseBody.length;i++)
 for(let pet of responseBody)
 {
     console.log(pet)
+    assert.strictEqual(pet.status,'sold')
 }

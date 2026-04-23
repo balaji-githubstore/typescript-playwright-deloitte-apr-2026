@@ -2,7 +2,9 @@
  * Post method
  */
 
+
 import { request } from "playwright";
+import assert from "node:assert";
 
 const requestBody={
   "id": 688,
@@ -31,6 +33,8 @@ console.log(response.status())
 const responseBody=await response.json()
 console.log(responseBody)
 
-// extract id and print
+assert.strictEqual(response.status(),200)
 
+// extract id and print
+assert.strictEqual(requestBody.id,688)
 //delete
