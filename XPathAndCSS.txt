@@ -28,15 +28,22 @@ And-Or
 //a[@id='forgot_password_link' and text()='Forgot Your Password?']
 
 Parent - child 
+parent 
+//span[@id='example']/..
+
+child
+//table[@id='example']/tbody/tr[1]/td[1]
 
 ancestor - descendant 
+//span[@id='example']/ancestor::a
+
 
 
 following - preceding 
 //span[text()='Month']/following::select
 
 following-sibling 
-
+//form[@id='example']//input[@name='departure']
 
 Example: Verify in chrome - ctrl+f
 //span[text()='Create account']
