@@ -2,16 +2,6 @@
 
 A comprehensive training project demonstrating TypeScript fundamentals, API testing, and UI automation using Playwright. This repository contains progressive examples from basic TypeScript concepts to advanced automation scenarios.
 
-## 📋 Table of Contents
-
-- [Project Overview](#project-overview)
-- [Package Dependencies](#package-dependencies)
-- [Project Structure](#project-structure)
-- [Installation & Setup](#installation--setup)
-- [Usage Examples](#usage-examples)
-- [Demo Files Overview](#demo-files-overview)
-- [Contributing](#contributing)
-
 ## 🎯 Project Overview
 
 This project serves as a comprehensive learning resource for:
