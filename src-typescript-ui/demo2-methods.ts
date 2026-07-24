@@ -31,8 +31,6 @@ let output:number=addMe({num1:9,num2:6})
 
 
 
-
-
 async function getHello1() : Promise<string>{
     //1000 line code 
     for(let i=1;i<1000;i++)
