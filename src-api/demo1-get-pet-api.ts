@@ -19,3 +19,7 @@ console.log(body.name)
 
 // console.log(await response.text())
 console.log(body.category.id)
+
+body.name = "don";
+
+console.log(body.name.toUpperCase());
