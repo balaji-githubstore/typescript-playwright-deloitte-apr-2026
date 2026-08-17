@@ -5,9 +5,9 @@
 import { request } from "playwright";
 
 
-const apiRequestContext= await request.newContext(); 
+const apiRequestContext= await request.newContext({baseURL:"https://petstore.swagger.io/v2/"}); 
 
-const response=await apiRequestContext.get("https://petstore.swagger.io/v2/pet/10")
+const response=await apiRequestContext.get("pet/10")
 
 console.log(response.status())
 console.log(response.statusText())
